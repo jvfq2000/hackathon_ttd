@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Grupo TTD - Hackathon Printf</title>
+	<meta charset="utf-8">
+
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/mapa.css">
+	
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGKoGOiQnQQ6ULFKerHWVLPlQQsdPqblk&callback=initialize"></script>
+	<script src="./js/jquery-3.5.1.min.js"></script>
+	<script src="./js/mapa.js"></script>
+</head>
+
+<body class="text-center" onload="initialize()">
+	<h1 class="h1">TTD System</h1>
+	<a class="btn btn-outline-primary btn-lg" href="cadastrar.php">Cadastrar Sensor</a><br>
+	
+	<div id="map_content"></div>
+
+	<form class="needs-validation" novalidate action="" method="post" id="form_route">
+		<div class="row">
+			<div class="col-5 mb-3 mx-auto">
+				<label for="origem">Informe o endereço de origem</label>
+				<input type="text" class="form-control" id="origem" name="origem" required/>
+				<div class="invalid-feedback">
+					Campo obrigátorio!
+				</div>
+			</div>
+
+			<div class="col-md-5 mb-3 mx-auto">
+				<label for="destino">Informe o endereço de destino</label>
+				<input type="text" class="form-control" id="destino" name="destino" required/>
+				<div class="invalid-feedback">
+					Campo obrigátorio!
+				</div>
+			</div>
+		</div>
+
+
+		<button class="col-md-11 mx-auto btn btn-outline-success btn-lg" type="submit" value="Indicar melhor caminho">Indicar melhor caminho</button><br><br>
+	</form>
+	<script src="./js/bootstrap.min.js.map"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/validar.js"></script>
+</body>
+</html>
